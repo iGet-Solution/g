@@ -301,7 +301,7 @@ p {
     color: white;
     overflow: hidden;
     padding: 0; /* Enlever tout padding */
-    margin: 0;  /* Enlever tout margin */
+    margin: 0;  /* Enlever mais  tout margin */
 }
 
 /* Appliquer les images directement sur chaque section */
@@ -369,4 +369,18 @@ p {
 section, .solution-item {
     padding: 0;
     margin: 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .solutions-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .solution-item {
+        flex: 1 1 auto;
+        width: 100%;
+        margin: 0;
+    }
 }
